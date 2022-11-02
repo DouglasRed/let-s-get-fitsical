@@ -22,7 +22,7 @@ const startApolloServer = async (typeDefs, resolvers) => {
   server.applyMiddleware({ app });
 
   db.once("open", () => {
-    app.listen(PORT, () => {
+    app.listen(process.env.PORT || 80, function () {
       console.log(`API server running on port ${PORT}!`);
       // log where we can go to test our GQL API
       console.log(
