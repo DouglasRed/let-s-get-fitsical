@@ -24,7 +24,6 @@ const resolvers = {
     },
     workout: async (parent, args) => {
       const query = "biceps";
-      // let query = args;
       const url = `https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises?muscle=${query}`;
       const options = {
         method: "GET",
