@@ -9,7 +9,7 @@
     "npm": "8.11.0"
   },
   "scripts": {
-    "start": "node server/server.js",
+    "start": "node server/server.js && react-scripts start",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "build": "cd client && npm run build",
